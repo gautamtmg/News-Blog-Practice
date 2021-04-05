@@ -6,8 +6,11 @@ from .models import News, Slider
 def home(request):
     news = News.objects.all()
     sliders = Slider.objects.all()
+    categories = ['Beauty', 'Fashion and Style', 'Food']
     context = {
         'news': news,
-        'sliders': sliders
+        'sliders': sliders,
+        'categories': categories,
+
     }
     return render(request, 'index.html', context)

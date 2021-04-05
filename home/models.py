@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 CATEGORY = (
     ('beauty', 'beauty'),
-    ('fasion', 'fashion and style')
+    ('fashion and Style', 'fashion and style')
 )
 
 class News(models.Model):
